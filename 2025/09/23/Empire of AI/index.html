@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="博客, 技术, 生活">
+    <meta name="description" content="记录生活与技术">
+    <meta name="author" content="Chao">
+    
+    <title>
+        
+            Empire of AI 记录 |
+        
+        Chao&#39;s Log
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/favicon.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"gongqichao.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Chao's Log","author":"Chao","avatar":null,"logo":"/images/site-logo.svg","favicon":"/images/favicon.svg"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving. || 记录生活，分享技术","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/username","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"mailto:your-email@example.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":null,"category":false,"tag":true,"post_datetime":"created"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default","enable":true,"style":"default","copy_btn":true,"word_wrap":false,"highlight_height_limit":300},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right","auto_open":true,"position":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":false},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":"username/username.github.io","repo_id":"YOUR_REPO_ID","category":"Announcements","category_id":"YOUR_CATEGORY_ID","reactions_enabled":true,"mapping":"pathname","theme":"preferred_color_scheme","lang":"zh-CN"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2025,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]},"icp":{"enable":true,"number":null,"url":null}},"inject":{"enable":false,"css":[null],"js":[null]},"tags":{"tag_cloud":true,"comment":false},"math":{"enable":false,"engine":"mathjax"},"mermaid":{"enable":false},"seo":{"google_verification":null,"baidu_verification":null},"pwa":{"enable":false},"analytics":{"google":{"enable":false,"id":null},"baidu":{"enable":false,"id":null}},"post_copyright_info":{"enable":true,"author":"Chaos","link":"https://gongqichao.github.io","license":"CC BY-NC-SA 4.0","license_url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"root":"","source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/site-logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Chao&#39;s Log
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        Empire of AI 记录
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Chao</span>
+                                
+                                    <span class="author-badge">Lv1</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2025-09-23 17:35:00</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Thu Nov 20 2025 21:46:31 GMT+0800">2025-11-20 21:46:31</span>
+                </span>
+            
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/books/">books</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>本书作者：<a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Karen_Hao" >Karen Hao<i class="fas fa-external-link-alt"></i></a></p>
+<h1 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h1><p>可能是与打小受的教育（慕强、不会质疑）有关，自己没有任何质疑地就扎到最近这波人工智能的叙事浪潮中去了</p>
+<p>而哪些东西是 hype ，哪些东西是 real 的，是值得思考的</p>
+<p>这些判断，应该结合自己的处境，应该是有针对性的，而不是人云亦云</p>
+<h1 id="总体感受"><a href="#总体感受" class="headerlink" title="总体感受"></a>总体感受</h1><p>OpenAI 和 Altman 都是矛盾聚合体</p>
+<p>OpenAI 是目前为止人工智能领域最成功的公司，没有之一，而这家公司的创始人 Sam Altman（奥特曼）也一跃成为白宫的座上宾。但这本书却是从头到尾几乎以“控诉”的口吻在记录 OpenAI 以及 Altman 的发家史。</p>
+<p>这个“控诉”从 Altman 的习惯性撒谎&#x2F;操纵型人格对身边同事的影响、混乱的私人生活与妹妹的情感纠葛一直延伸到 OpenAI 这家公司的所作所为对整个科研领域的恶劣影响，可以说是全方位的，并且多少也能从书中这种“控诉”得见 OpenAI 这家公司以及 Altman 这个人在硅谷的确充满了争议。</p>
+<h1 id="OpenAI-内部的三个派系"><a href="#OpenAI-内部的三个派系" class="headerlink" title="OpenAI 内部的三个派系"></a>OpenAI 内部的三个派系</h1><p>OpenAI 从早期非盈利性质成立到最后转变为盈利性公司，按书中所述，其内部冲突几乎从未断过。这家公司的人员构成也的确比一般的互联网公司复杂，它核心有三伙人：</p>
+<ul>
+<li>科学家</li>
+</ul>
+<p>这帮人主要研究有哪些更好的人工智能模型或算法，他们不写程序代码，也不在乎硅谷的那套“产品至上”理论，他们似乎很多人都是数学天才或者奥数冠军</p>
+<ul>
+<li>AI 安全员</li>
+</ul>
+<p>这帮人主要负责让人工智能不要危害人类，比如控制 AI 回复人类的提问时不要有种族歧视、暴力等用语，这帮人是Doomer（后面会有解释什么是Doomer）理论驱动下的计算机工程师，核心思想是认为 AI 的每一步发展都应该首先确保对人类是无害的，与人类是“对齐”的</p>
+<ul>
+<li>工程师</li>
+</ul>
+<p>互联网时代特产，Boomer（与Doomer对应）理论的拥趸，认为只有加速，只有更多规模，只有更多用户，只有更多增长，才能解决一切问题</p>
+<h1 id="两大思潮（EA，E-ACC）"><a href="#两大思潮（EA，E-ACC）" class="headerlink" title="两大思潮（EA，E&#x2F;ACC）"></a>两大思潮（EA，E&#x2F;ACC）</h1><p>OpenAI 这几年，也正好赶上了硅谷两股大的思潮此消彼长的过程，这两股思潮是：</p>
+<ul>
+<li>EA（Effective Altrusim），有效利他主义；即 Doomer</li>
+<li>E&#x2F;ACC，有效加速主义，即前面说的 Boomer</li>
+</ul>
+<p>所以从这个角度看，OpenAI 内部的冲突也许不是它一家的个例，也许正是这个时代硅谷这些科技公司的共性</p>
+<p>只不过，OpenAI 在大潮之中，最终选择了 Boomer，而 Anthropic（目前 OpenAI 最强力的竞争对手之一）则看上去选择了 Doomer</p>
+<h1 id="数字殖民似乎难以消除"><a href="#数字殖民似乎难以消除" class="headerlink" title="数字殖民似乎难以消除"></a>数字殖民似乎难以消除</h1><p>书中攻讦 OpenAI “大力出奇迹”的训练方法，主要是两个点：</p>
+<ul>
+<li>能耗大，给自然环境带来了不良影响</li>
+<li>低价雇佣海量廉价劳动力做数据标注，实际上对这些国家的变相盘剥和殖民</li>
+</ul>
+<p>第二点所说的这种数字殖民现象，应该并不是从这波 AI 浪潮开始才兴起的，而是基本上伴随着互联网的兴起，这种剥削就始终存在，比如之前印度还是巴基斯坦盛行的所谓“click farm”，其实就是硅谷的 StartUp ，雇佣一堆廉价的印度人坐在拥挤的房间里模拟用户使用他们的产品，通过这种方式，让自己的用户数量激增，进而骗取投资人的信任和投资</p>
+<p>但这类问题似乎无法让这些硅谷的科技公司背上全责，或者说，就算追究这些科技公司，也无法从根本上解决这个问题。肯尼亚、智利、巴基斯坦以及很多类似这样的地区，人们仍然生活在极度贫困中，一点微薄的收入总好过什么都没有，这也是他们甘愿-甚至争着要为这些硅谷的科技公司卖命的原因，而这些地区的国家&#x2F;政府没有更好的办法去解决这些人就业的问题，也只能听之任之，甚至沦为硅谷的买办</p>
+<p>技术发展并不能直接带来财富的（更公平地）再分配，甚至有时会加剧贫富的不均</p>
+<h1 id="Sam-Altman"><a href="#Sam-Altman" class="headerlink" title="Sam Altman"></a>Sam Altman</h1><ul>
+<li>他不是典型的硅谷工程师，核心技能是“交易”- 融资，这也是他能从 OpenAI 一众高管发起的“叛乱”事件中被驱逐后再重新回来的根本原因：他能搞来钱</li>
+<li>他的导师有两个：Peter Thiel 和 Paul Graham，不过似乎后期与 Thiel 交恶</li>
+<li>OpenAI 初始阶段，他搞定了 Elon Musk，这非常关键</li>
+<li>OpenAI 起飞阶段，他搞定了 Microsoft，这也非常关键</li>
+<li>我不认为 Ilya Sutskever 或者 Greg Brockman 能带领 OpenAI 走到今天，也许 Altman 无法带领 OpenAI 走到更远的地方，但是其他人估计更够呛，真实世界就是这样</li>
+</ul>
+<h1 id="Ilya-Sutskever"><a href="#Ilya-Sutskever" class="headerlink" title="Ilya Sutskever"></a>Ilya Sutskever</h1><ul>
+<li>典型的科学家，有点仙儿，很瘦，而且还有点儿谢顶</li>
+<li>非常x10聪明</li>
+<li>对 Altman 有复杂情感，既有共同创业队友情，但也逐渐认识到不是一路人</li>
+<li>在 OpenAI 发动一众高管“叛乱”，驱逐 Altman 失败后，离开 OpenAI 自己创办了一个新的 AI 公司</li>
+<li>活在理想国中的人，书中对他批判的应该是最少的了，但这种人离开 Altman 这种人，真实世界中我认为很难走远</li>
+</ul>
+<h1 id="Greg-Brockman"><a href="#Greg-Brockman" class="headerlink" title="Greg Brockman"></a>Greg Brockman</h1><ul>
+<li>典型的硅谷工程师</li>
+<li>code is everything</li>
+<li>冲刺 9 年，才给自己放了个假</li>
+<li>OpenAI 死忠，坚定相信 OpenAI 的“使命”</li>
+<li>2022 年成为 OpenAI 的总裁，真爱干的事仍然是写代码（coding）</li>
+<li>OpenAI 早期搞定 Microsoft 的 Dota 项目，中期搞定 Bill Gates 的 GPT4 demo（完成 AP-Chemistry 考试）都是他</li>
+</ul>
+<h1 id="Mira-Murati"><a href="#Mira-Murati" class="headerlink" title="Mira Murati"></a>Mira Murati</h1><ul>
+<li>东欧出身（为什么东欧有这么多数学家，似乎仅次于中国&#x2F;东亚？）</li>
+<li>在 OpenAI 与 Microsoft 的合作中起到了关键作用（无数次帮 Altman 擦屁股）</li>
+<li>在缓和内部高管关系中起到了关键作用（雄性荷尔蒙泛滥的硅谷初创公司，性格好的女性高管似乎都要负责干这个事儿）</li>
+</ul>
+<h1 id="Bill-Gates"><a href="#Bill-Gates" class="headerlink" title="Bill Gates"></a>Bill Gates</h1><ul>
+<li>仍然对 Microsoft 的重大决策有核心影响力</li>
+</ul>
+<h1 id="Elon-Musk"><a href="#Elon-Musk" class="headerlink" title="Elon Musk"></a>Elon Musk</h1><ul>
+<li>直接推动了 OpenAI 的建立</li>
+<li>认为自己被 Altman 利用，离开 OpenAI</li>
+<li>自己搞了 xAI </li>
+<li>欣赏 Ilya Sutskever，在 Ilya 宣布离开 OpenAI 时，立刻就发 offer，但被拒绝了</li>
+<li>Tesla 培养了很多人才，Mira Murati 最早就是在 Tesla 的工作时期对人工智能产生了兴趣</li>
+</ul>
+<h1 id="原文（部分）摘录-翻译"><a href="#原文（部分）摘录-翻译" class="headerlink" title="原文（部分）摘录&#x2F;翻译"></a>原文（部分）摘录&#x2F;翻译</h1><ul>
+<li>Beyond a small group of ultra rich techno-optimists, their fiercest ideological rivals, and a multibillion-dollar techgiant, even OpenAI’s own employees found themselves largely in the dark about which way their fates would fall.</li>
+</ul>
+<p>除了少数超级富有的技术乐观主义者、他们最激烈的意识形态对手，以及一家价值数十亿美元的科技巨头之外，就连 OpenAI 自己的员工对自己的命运走向都一无所知。</p>
+<ul>
+<li>Artificial intelligence is a technology that takes many forms. It is in fact a multitude of technologies that shape-shift and evolve, not merely based on technical merit but with the ideological drives of the people who create them and the winds of hype and commercialization.</li>
+</ul>
+<p>人工智能是多形态技术聚合体。其中的各种技术在不断变化和演进，这不仅基于技术本身，更受到创造者的意识形态驱动，以及炒作和商业化的共同影响。</p>
+<ul>
+<li>Musk would come to feel like Altman had used him to catapult to prominence.</li>
+</ul>
+<p>马斯克逐渐觉得奥特曼是利用了他来帮助自己迅速崛起。</p>
+<ul>
+<li>“You could parachute him into an island full of cannibals and come back in 5 years and he’d be the king,” his mentor, Paul Graham, once famously said.</li>
+</ul>
+<p>“你可以把他扔到一个食人族岛上，五年后再回来看，他会成为那里的国王”他的导师保罗·格雷厄姆曾对奥特曼给出这样的经典评论。</p>
+<ul>
+<li>Key to his formula, people say, is the combination of his remarkable listening skills, his willingness to help, and his ability to frame whatever he has to offer in terms of exactly what you want.</li>
+</ul>
+<p>人们说，他成功的关键在于他善于倾听、乐于助人，并且他能精准地将自己的建议或帮助与你的需求相匹配的能力。</p>
+<ul>
+<li>The two mentors(Thiel and PG) impressed on Altman the imperative for scale and the efficiencies of capitalism over government.</li>
+</ul>
+<p>两位导师（彼得.蒂尔和保罗·格雷厄姆）让奥特曼深刻认识到扩大规模的必要性，以及资本相较于政府会更加高效。</p>
+<ul>
+<li>His second-ever and most successful startup investment was in the YC-backed payments technology company Stripe, for which Greg Brockman was its first chief technology officer.</li>
+</ul>
+<p>他（奥特曼）的第二次，也是最为成功的一次初创企业投资，是投资了由 YC（Y Combinator）支持的支付技术公司 Stripe，而 Greg Brockman 是该公司的第一位首席技术官。</p>
+<ul>
+<li>Google’s dizzying offer underscored to Sutskever why a nonprofit like OpenAI was needed.</li>
+</ul>
+<p>谷歌令人眼花缭乱的报价，让苏茨克维尔更加确信，像 OpenAI 这样的非营利组织存在的必要性。</p>
+<ul>
+<li>In Silicon Valley, office design is a kind of currency, a symbol of confidence in the company’s financial future and a way to gain a slim advantage in the competition for top-tier talent.</li>
+</ul>
+<p>在硅谷，办公室设计堪称一种 “硬通货” - 它既是企业对自身财务前景充满信心的象征，也是在顶尖人才争夺战中获得优势的一种手段。</p>
+<ul>
+<li>Our mission is to ensure that AGI benefits all of humanity. And the way we want to do that is: Build AGI and distribute its economic benefits.</li>
+</ul>
+<p>我们的使命是确保通用人工智能（AGI）造福全人类。而我们计划实现这一目标的路径是：先研发出通用人工智能，再让其产生的经济收益惠及大众。（这段话来自 Greg Brockman）</p>
+<ul>
+<li>“Greg doesn’t have a vision. He’s not the Sam Altman visionary. He just wants a cool hard problem to solve and to prove out that he’s 10x smarter than anyone else.”</li>
+</ul>
+<p>“格雷格（Greg）没有长远愿景。他不像山姆・奥特曼（Sam Altman）那样有远见，他只是想找一个很酷且极具挑战性的难题来解决，进而以此证明自己比任何人都要聪明十倍。”</p>
+<ul>
+<li>In 2022, he became OpenAI’s president.</li>
+</ul>
+<p>在 2022年，他（Greg Brockman）成为了 OpenAI的总裁。</p>
+<ul>
+<li>At their core, neural networks are calculators of statistics that identify patterns in old data—text, pictures, or videos—and apply them to new data.</li>
+</ul>
+<p>神经网络的核心本质是一种 “统计计算器”：它从文本、图片或视频等数据中识别出规律模式，再将这些模式应用到新数据上。</p>
+<ul>
+<li>But from 2012 to 2022, beginning with the ImageNet breakthrough, it was these shifts during the first major era of AI commercialization that laid the groundwork for many characteristics of the generative AI revolution today.</li>
+</ul>
+<p>但在 2012 年至 2022 年期间 —— 以 ImageNet（ImageNet 图像识别挑战赛）的突破为起点 —— 正是人工智能首次商业化大发展阶段中的这些变革，为如今生成式人工智能革命的诸多特征奠定了基础。</p>
+<ul>
+<li>Generative AI is thus the maximalist form of deep learning.</li>
+</ul>
+<p>因此，生成式人工智能是深度学习的 “极致形态”。</p>
+<ul>
+<li>After all, such systems are trained on the internet, replete with its many fringe subcultures and dark corners.</li>
+</ul>
+<p>毕竟，这类系统的训练数据来源于互联网，而互联网中充斥着形形色色的边缘亚文化群体，也藏有不少阴暗角落。</p>
+<ul>
+<li>Bloomberg, Rest of World, The Washington Post, and many others have shown how image generators like Stable Diffusion and DALL-E reify and regurgitate racist and sexist tropes and cultural stereotypes.</li>
+</ul>
+<p>彭博社（Bloomberg）、Rest of World（聚焦全球科技与社会的媒体）、华盛顿邮报（The Washington Post）等多家媒体均已披露，像 Stable Diffusion 和 DALL-E 这类图像生成工具，是如何固化并重复呈现种族歧视、性别歧视的固有印象以及文化刻板观念的。</p>
+<ul>
+<li>scaling laws described the relationship between the performance of a deep learning model and three key inputs: the volume of a model’s training data, the amount of compute it was trained on, and the number of its parameters.</li>
+</ul>
+<p>“规模法则”描述了深度学习模型的性能与三个关键要素之间的关系，这三个要素分别是：训练数据的体量、训练过程中投入的计算资源量，以及模型自身的参数数量。</p>
+<ul>
+<li>Amodei began viewing scaling language models as—though likely not the only thing necessary to reach AGI—perhaps the fastest path toward it.</li>
+</ul>
+<p>阿莫迪（Amodei）开始将语言模型的规模扩展视为 - 尽管这很可能不是实现通用人工智能（AGI）的唯一必要手段 - 但或许是通往 AGI 的最快路径。</p>
+<ul>
+<li>But Amodei was adamant about his proposal and had the backing of other executives. Sutskever was keen to play out his hypothesis of scaling Transformers; Brockman wanted to continue raising the company’s profile; Altman was pushing to take the biggest swing possible. Soon after, Amodei was promoted to a VP of research.</li>
+</ul>
+<p>但阿莫迪（Amodei）对自己的提议态度坚决，且得到了其他高管的支持。萨茨克弗（Sutskever）迫切想要验证自己关于 “扩大 Transformer 模型规模” 的假说；布罗克曼（Brockman）希望继续提升公司的知名度；奥特曼（Altman）则在推动公司采取最大胆的行动。不久之后，阿莫迪便被提拔为研究副总裁。</p>
+<ul>
+<li>GPT-2, in other words, had been peak data quality; it declined from there.</li>
+</ul>
+<p>换句话说，GPT-2 所使用的训练数据已经是数据质量最好的了；自此之后，数据质量便开始下滑。</p>
+<ul>
+<li>Early in his career, Altman observed that new CEOs only succeeded if they “refounded” the company.</li>
+</ul>
+<p>在职业生涯早期，奥特曼（Altman）就观察到一个现象：新任 CEO 若想取得成功，就必须对公司进行 “二次创业”。</p>
+<ul>
+<li>In March 2019, as he transitioned to OpenAI full time, he quickly brought with him the same aggressive mindset that he’d used at YC.</li>
+</ul>
+<p>2019 年 3 月，当奥特曼（Altman）全职加入 OpenAI 时，他很快将自己在 Y Combinator（简称 YC，知名创业孵化器）任职期间所秉持的激进作风也带到了新岗位上。</p>
+<ul>
+<li>“My sort of crazy, somewhat arbitrary rule of thumb is you want to have a technology that’s an order of magnitude better than the next best thing,” Thiel had said during his 2014 lecture to Altman’s startup course at Stanford.</li>
+</ul>
+<p>“我那条有点疯狂、略带主观的经验法则是：你所追求的技术，其优势要比次优技术高出一个数量级。” 蒂尔（Thiel）在 2014 年斯坦福大学奥特曼（Altman）开设的创业课程上发表演讲时，曾这样说道。</p>
+<ul>
+<li>“To paraphrase that famous Disney quote,” Altman wrote,“we should make more money so that we can do more research, not do more research so that we can make more money.”</li>
+</ul>
+<p>“套用迪士尼那句著名的话来说，” 奥特曼（Altman）写道，“我们应该先赚更多钱，以便能开展研发；而不是先做更多研发，再去赚更多钱。”</p>
+<ul>
+<li>Shortly after OpenAI’s Microsoft deal was inked, several of them were stunned to discover the extent of the promises that Altman had made to Microsoft for which technologies it would get access to in return for its investment.</li>
+</ul>
+<p>OpenAI 与微软的合作协议刚敲定不久，它的几位高管便震惊地发现：为换取微软的投资，奥特曼（Altman）向微软承诺开放的技术权限范围，远比他们预想的要大。</p>
+<ul>
+<li>Altman used the specter of US adversaries advancing AI research faster than OpenAI to rationalize why the company needed to be less and less open while working as fast as possible.</li>
+</ul>
+<p>奥特曼（Altman）以美国对手的人工智能研究进展可能快于 OpenAI 这一隐忧为理由，来解释为何公司需要逐渐降低 “开放性”，同时以最快速度推进研发。</p>
+<ul>
+<li>Though Altman never name-checked anyone, employees read between the lines. Sutskever was the face of Exploratory Research; Amodei and his AI safety contingent focused on extreme risks constituted Safety; Brockman was the champion of Startup.</li>
+</ul>
+<p>尽管奥特曼（Altman）从未点名道姓，但员工们都心知肚明：萨茨克弗（Sutskever）是 “探索性研究”（Exploratory Research）的代表；阿莫迪（Amodei）及其专注于极端风险研究的人工智能安全团队，是 “安全”（Safety）方向的核心力量；而布罗克曼（Brockman）则是 “初创模式”（Startup，此处指推动公司商业化、轻量化运营的方向）的倡导者。</p>
+<ul>
+<li>Mira Murati was promoted to VP of a new Applied division for overseeing the API and commercialization strategy.</li>
+</ul>
+<p>米拉・穆拉蒂（Mira Murati）被提为新成立的 “应用事业部”（Applied division）副总裁，负责监管应用程序接口（API）及商业化战略。</p>
+<ul>
+<li>In 2023, Stanford researchers would create a transparency tracker to score AI companies on whether they revealed even basic information about their large deep learning models, such as how many parameters they had, what data they were trained on, and whether there had been any independent verification of their capabilities. All ten of the companies they evaluated in the first year, including OpenAI, Google, andAnthropic, received an F; the highest score was 54 percent.</li>
+</ul>
+<p>2023 年，斯坦福大学的研究人员打造了一个 “透明度追踪工具”，用于对人工智能公司进行评分 —— 评分标准是这些公司是否公开其大型深度学习模型的基础信息，例如模型拥有多少参数、训练数据来源是什么、其能力是否经过独立验证等。第一年纳入评估的 10 家公司（包括 OpenAI、谷歌和 Anthropic）全部只有 F 级（最低等级）；其中最高得分也仅为 54%（满分通常为 100%，54% 仍未达到及格线）。</p>
+<ul>
+<li>Coding data was one of the most obvious and largest sources of data that encoded structured patterns of logic.</li>
+</ul>
+<p>代码是最显著、体量也最大的数据来源之一，这类数据中蕴含着结构化的逻辑模式。</p>
+<ul>
+<li>Microsoft was also a challenging partner; many felt it had far too much bureaucracy and required too much hand-holding to make the most of OpenAI’s models. By relying on the tech giant to deliver its technologies to the public, OpenAI was also losing visibility into and data from its users and, most importantly, control over its vision.</li>
+</ul>
+<p>微软也不是个容易合作的伙伴；许多人认为，它的官僚体系过于繁琐，且要充分利用 OpenAI 的模型，还需投入大量精力对其进行 “手把手指导”。依赖这家科技巨头将自身技术推向公众，OpenAI 同样面临损失：既无法直接接触用户、获取用户数据，更重要的是，逐渐失去了对自身愿景的掌控权。</p>
+<ul>
+<li>The Wall Street Journal would subsequently calculate Altman’s net worth in June 2024 across all his holdings to be at least $2.8 billion.</li>
+</ul>
+<p>《华尔街日报》随后在 2024 年 6 月对奥特曼（Altman）名下所有资产进行核算后，得出其净资产至少为 28 亿美元。</p>
+<ul>
+<li>Kenya became a critical hub of the internet’s backstop labor.</li>
+</ul>
+<p>肯尼亚已成为互联网 “支撑性劳动力” 的重要枢纽。</p>
+<ul>
+<li>One of the defining features that drives an empire’s rapid accumulation of wealth is its ability to pay very little or nothing at all to reap the economic benefits of a broad base of human labor.</li>
+</ul>
+<p>驱动一个帝国快速积累财富的核心特征之一，便是它有能力以极低的成本（甚至零成本）利用庞大的劳动力群体创造经济价值，从而攫取巨额收益。</p>
+<ul>
+<li>Poverty doesn’t just manifest as a lack of money or material wealth, the workers taught me. It seeps into every dimension of a worker’s life and accrues debts across it: erratic sleep, poor health, diminishing self-esteem, and, most fundamentally, little agency and control.</li>
+</ul>
+<p>这些劳动者告诉我，贫困所呈现的并非仅仅是缺钱或少物资那么简单。它会渗透到劳动者生活的方方面面，并在生活的各个维度累积下 “债务”：睡眠不规律、健康状况糟糕、自尊心不断受挫，而最根本的，是几乎没有自主权与掌控力。</p>
+<ul>
+<li>It was in this context that effective altruism arrived from the UK and found its most loyal audience.</li>
+</ul>
+<p>正是在这样的背景下，“有效利他主义” 从英国传入，并找到了其最忠实的受众群体。</p>
+<ul>
+<li>At the time, Holden Karnofsky, Daniela Amodei’s future husband, had been running a different organization called GiveWell, which he’d founded in 2007 after leaving the hedge fund Bridgewater Associates.</li>
+</ul>
+<p>当时，丹妮拉・阿莫迪（Daniela Amodei）未来的丈夫霍尔顿・卡诺夫斯基（Holden Karnofsky）正运营着一家名为 “慈善评估机构”（GiveWell）的独立组织 —— 这家机构是他 2007 年离开桥水联合基金（Bridgewater Associates）后创立的。</p>
+<ul>
+<li>EA movement ballooned. EA had long touted the importance of pandemic preparedness, and now, in the midst of an actual pandemic, its remarkable prescience won it new adherents. The psychological toll of a global catastrophe had also left many people anxious and unmoored, searching for purpose.</li>
+</ul>
+<p>有效利他主义（EA）运动的规模迅速扩大。长期以来，有效利他主义一直强调应对流行病的准备工作的重要性，而如今，在一场真实的流行病（指新冠疫情）爆发期间，其惊人的预见性为它赢得了新的追随者。此外，全球灾难带来的心理创伤，也让许多人陷入焦虑与迷茫，进而开始寻求人生的意义 —— 这也为该运动的发展创造了条件。</p>
+<ul>
+<li>It would also give rise to a countervailing force:e&#x2F;acc(pronounced “ee-ack”), or effective accelerationism.</li>
+</ul>
+<p>这一趋势还催生了一股制衡力量：e&#x2F;acc（发音为 “ee-ack”，全称 “effective accelerationism”），即 “有效加速主义”。</p>
+<ul>
+<li>The two groups became colloquially known as the Doomers and Boomers. Where one warned of fire and brimstone, the other tantalized with visions of heaven.</li>
+</ul>
+<p>这两个群体在口语中被俗称为 “末日派”（Doomers）和 “繁荣派”（Boomers）。一方用末日降临般的警示（强调技术风险）敲醒世人，另一方则用天堂般的美好愿景（描绘技术红利）吸引大众。</p>
+<ul>
+<li>More and more, Mira Murati played the role of negotiator, smoothing out the fault lines between different factions and searching for ways to thread the needle between them.</li>
+</ul>
+<p>米拉・穆拉蒂（Mira Murati）愈发频繁地扮演起 “协调者” 的角色：一方面抚平不同派系间的分歧裂痕，另一方面则在各方立场中寻找平衡，力求找到能让彼此接受的折中方案。</p>
+<ul>
+<li>Brockman took Gates’s remark as a challenge. He immediately reached out to Sal Khan, the CEO of online education platform Khan Academy, and asked him to tap into the company’s large repository of AP Bio questions as training data.</li>
+</ul>
+<p>布罗克曼将盖茨的这番话视作一种挑战。他立刻联系了在线教育平台 “可汗学院”（Khan Academy）的首席执行官萨尔・可汗（Sal Khan），请求对方调用该公司海量的 AP 生物（AP Bio）题库资源，将其作为训练数据。</p>
+<ul>
+<li>This showcase, Gates said, was one of the two most stunning demos he’d ever seen in his life.</li>
+</ul>
+<p>盖茨表示，这场演示是他这辈子见过的最令人震撼的两场演示之一。</p>
+<ul>
+<li>After ChatGPT went viral, SemiAnalysis, a trade newsletter focused on the semiconductor industry, estimated that the company was spending some$700,000 a day on compute costs alone.</li>
+</ul>
+<p>ChatGPT 走红后，专注于半导体行业的行业通讯《半导体分析》（SemiAnalysis）估算，仅在算力成本这一项上，OpenAI（前文围绕该公司展开，此处补充明确主体）每天的支出就约达 70 万美元。</p>
+<ul>
+<li>The US government subsequently embarked on a quest to refashion Chile’s economic policies to be more favorable to American business interests, launching a program in 1956 called “the Chile Project” to educate a hundred Chilean students at the University of Chicago under the intellectual tutelage of American economist Milton Friedman. Friedman’s neoliberal ideas percolated through Chile’s intellectual elite, until they became part of ruling ideology.</li>
+</ul>
+<p>美国政府随后着手调整智利的经济政策，使其更符合美国商界的利益；1956 年，美国启动了一个名为 “智利项目” 的计划，资助 100 名智利学生前往芝加哥大学学习，并由美国经济学家米尔顿・弗里德曼（Milton Friedman）担任学术指导。弗里德曼的新自由主义思想逐渐渗透到智利知识精英群体中，最终成为智利执政理念的一部分。</p>
+<ul>
+<li>According to the International Energy Agency, each ChatGPT query is estimated to need on average about ten times more electricity than a typical search on Google. In other words, every AI-generated image could consume enough energy to charge a smartphone by roughly 25 percent.</li>
+</ul>
+<p>根据国际能源署（International Energy Agency，简称 IEA）的数据，每一次 ChatGPT 查询所需的电力，平均约为一次常规谷歌搜索的 10 倍。换句话说，每生成一张人工智能（AI）图像，消耗的能源大约足以将一部智能手机的电量充至 25% 左右。</p>
+<ul>
+<li>Altman praised D’Angelo as one of “the smartest CEOs in Silicon Valley.” “And he has a very long-term focus, which has become a rare commodity in tech companies these days,” Altman said.</li>
+</ul>
+<p>奥尔特曼（Altman）称赞迪安杰洛（D’Angelo）是 “硅谷最聪明的首席执行官（CEO）之一”。他还表示：“而且他极具长期视野，在如今的科技公司里，这种品质已经成了稀缺之物。”</p>
+<ul>
+<li>As her tweets began to go viral in October 2022, they came to the attention of someone important: Ilya Sutskever, right as he was grappling with his own complex feelings about Altman and what he viewed as Altman’s patterns of abuse.</li>
+</ul>
+<p>2022 年 10 月，当她的推文开始走红时，引起了一位重要人物的注意 —— 伊利亚・萨茨克弗（Ilya Sutskever）。而彼时，萨茨克弗正因奥尔特曼（Altman）陷入纠结：他对奥尔特曼怀有复杂的情绪，也在审视他眼中奥尔特曼存在的不当行为倾向。</p>
+<ul>
+<li>Born in Albania, Murati had learned from a young age how to stay calm amid chaos. When she was sixteen, her precociousness won her a scholarship to study abroad at a Canadian private school, Pearson College UWC inVictoria, British Columbia.</li>
+</ul>
+<p>穆拉蒂（Murati）出生于阿尔巴尼亚，从小就学会了在混乱中保持冷静。16 岁时，她凭借超乎同龄人的成熟与能力，获得了出国留学的奖学金，前往加拿大不列颠哥伦比亚省维多利亚市的皮尔逊联合世界学院（Pearson College UWC）这所私立学校就读。</p>
+<ul>
+<li>Science is a process of consensus building.</li>
+</ul>
+<p>科学是一个达成共识的过程。</p>
+<ul>
+<li>With OpenAI performing its work in secrecy—and the rest of the industry now following—the “breakthrough” label could really only be treated as a matter of the company’s opinion.</li>
+</ul>
+<p>由于 OpenAI 的研发工作始终在秘密进行，如今行业内其他机构也纷纷效仿这种模式 —— 在这样的背景下，“突破性进展” 这一标签，实际上只能被视作该公司单方面的说法。</p>
+<ul>
+<li>Altman once remarked onstage that the best book he’d read the previous year in 2018 was The Mind of Napoleon, a more than three-hundred-page compilation of quotes from Napoleon Bonaparte.</li>
+</ul>
+<p>奥尔特曼曾在一次公开演讲中表示，2018 年他读过的最好的书是《拿破仑的思想》（The Mind of Napoleon）—— 这是一本逾 300 页、汇编了拿破仑・波拿巴（Napoleon Bonaparte）语录的合集。</p>
+<ul>
+<li>I’ve come to firmly believe that OpenAI’s mission—to ensure AGI benefits all of humanity—may have begun as a sincere stroke of idealism, but it has since become a uniquely potent formula for consolidating resources and constructing an empire-esque power structure. It is a formula with three ingredients. First, the mission centralizes talent by rallying them around a grand ambition. Second, the mission centralizes capital and other resources while eliminating road blocks, regulation, and dissent. Third, the constant changing of the meaning of the term “AGI” and that OpenAI would do whatever it needed, and interpret and reinterpret its mission accordingly, to entrench its dominance.</li>
+</ul>
+<p>我已坚定地认为，OpenAI 的使命 —— 确保通用人工智能（AGI）造福全人类 —— 或许最初源于一份纯粹的理想主义热忱，但如今已演变为一种极具效力的独特模式：它既用于整合资源，也用于构建帝国式的权力架构。这种模式包含三个核心要素：第一，该使命以宏大愿景凝聚人才，实现人才的集中；第二，该使命在集中资本与其他资源的同时，清除各类阻碍、规避监管并压制不同意见；第三，通过不断篡改 “通用人工智能（AGI）” 的定义，以及秉持 “为巩固自身主导地位，OpenAI 可不惜一切代价，并据此反复解读、重新定义其使命” 的逻辑，来巩固自身的支配权。</p>
+<ul>
+<li>“Data is the last frontier of colonization”</li>
+</ul>
+<p>数据是殖民化最后的前沿阵地</p>
+<ul>
+<li>If OpenAI’s mission is a formula for constructing empire, what is the formula for dissolving it?</li>
+</ul>
+<p>若 OpenAI 的使命是构建帝国的 “配方”，那么瓦解这一帝国的 “配方” 又是什么？</p>
+<h1 id="links"><a href="#links" class="headerlink" title="links"></a>links</h1><ul>
+<li>斯坦福“基座模型透明度”指数：<a class="link"   target="_blank" rel="noopener" href="https://crfm.stanford.edu/fmti/May-2024/index.html" >https://crfm.stanford.edu/fmti/May-2024/index.html<i class="fas fa-external-link-alt"></i></a></li>
+<li>Lilian Weng 博客：<a class="link"   target="_blank" rel="noopener" href="https://lilianweng.github.io/" >https://lilianweng.github.io/<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Eliezer_Yudkowsky" >https://en.wikipedia.org/wiki/Eliezer_Yudkowsky<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Shivon_Zilis" >https://en.wikipedia.org/wiki/Shivon_Zilis<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Holden_Karnofsky" >https://en.wikipedia.org/wiki/Holden_Karnofsky<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/KevinScott(computer_scientist)" >https://en.wikipedia.org/wiki/KevinScott(computer_scientist)<i class="fas fa-external-link-alt"></i></a></li>
+<li>Geoffery Irving: <a class="link"   target="_blank" rel="noopener" href="https://naml.us/" >https://naml.us/<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Bret_Taylor" >https://en.wikipedia.org/wiki/Bret_Taylor<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Jan_Leike" >https://en.wikipedia.org/wiki/Jan_Leike<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/books/">books</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2025/10/27/%E8%A5%BF%E6%96%B9%E7%8E%B0%E4%BB%A3%E6%80%9D%E6%83%B3/"
+                                   title="西方现代思想"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">西方现代思想</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'username/username.github.io')
+              script.setAttribute('data-repo-id', 'YOUR_REPO_ID')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'YOUR_CATEGORY_ID')
+              script.setAttribute('data-reactions-enabled', '1')
+              script.setAttribute('data-lang', 'zh-CN')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%AF%E5%8F%91"><span class="nav-number">1.</span> <span class="nav-text">启发</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E4%BD%93%E6%84%9F%E5%8F%97"><span class="nav-number">2.</span> <span class="nav-text">总体感受</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenAI-%E5%86%85%E9%83%A8%E7%9A%84%E4%B8%89%E4%B8%AA%E6%B4%BE%E7%B3%BB"><span class="nav-number">3.</span> <span class="nav-text">OpenAI 内部的三个派系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%A4%E5%A4%A7%E6%80%9D%E6%BD%AE%EF%BC%88EA%EF%BC%8CE-ACC%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">两大思潮（EA，E&#x2F;ACC）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%AE%96%E6%B0%91%E4%BC%BC%E4%B9%8E%E9%9A%BE%E4%BB%A5%E6%B6%88%E9%99%A4"><span class="nav-number">5.</span> <span class="nav-text">数字殖民似乎难以消除</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sam-Altman"><span class="nav-number">6.</span> <span class="nav-text">Sam Altman</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ilya-Sutskever"><span class="nav-number">7.</span> <span class="nav-text">Ilya Sutskever</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Greg-Brockman"><span class="nav-number">8.</span> <span class="nav-text">Greg Brockman</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mira-Murati"><span class="nav-number">9.</span> <span class="nav-text">Mira Murati</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Bill-Gates"><span class="nav-number">10.</span> <span class="nav-text">Bill Gates</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Elon-Musk"><span class="nav-number">11.</span> <span class="nav-text">Elon Musk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8E%9F%E6%96%87%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89%E6%91%98%E5%BD%95-%E7%BF%BB%E8%AF%91"><span class="nav-number">12.</span> <span class="nav-text">原文（部分）摘录&#x2F;翻译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#links"><span class="nav-number">13.</span> <span class="nav-text">links</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Chao</a>
+        
+    </div>
+
+    
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%AF%E5%8F%91"><span class="nav-number">1.</span> <span class="nav-text">启发</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E4%BD%93%E6%84%9F%E5%8F%97"><span class="nav-number">2.</span> <span class="nav-text">总体感受</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenAI-%E5%86%85%E9%83%A8%E7%9A%84%E4%B8%89%E4%B8%AA%E6%B4%BE%E7%B3%BB"><span class="nav-number">3.</span> <span class="nav-text">OpenAI 内部的三个派系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%A4%E5%A4%A7%E6%80%9D%E6%BD%AE%EF%BC%88EA%EF%BC%8CE-ACC%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">两大思潮（EA，E&#x2F;ACC）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%AE%96%E6%B0%91%E4%BC%BC%E4%B9%8E%E9%9A%BE%E4%BB%A5%E6%B6%88%E9%99%A4"><span class="nav-number">5.</span> <span class="nav-text">数字殖民似乎难以消除</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sam-Altman"><span class="nav-number">6.</span> <span class="nav-text">Sam Altman</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ilya-Sutskever"><span class="nav-number">7.</span> <span class="nav-text">Ilya Sutskever</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Greg-Brockman"><span class="nav-number">8.</span> <span class="nav-text">Greg Brockman</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mira-Murati"><span class="nav-number">9.</span> <span class="nav-text">Mira Murati</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Bill-Gates"><span class="nav-number">10.</span> <span class="nav-text">Bill Gates</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Elon-Musk"><span class="nav-number">11.</span> <span class="nav-text">Elon Musk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8E%9F%E6%96%87%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89%E6%91%98%E5%BD%95-%E7%BF%BB%E8%AF%91"><span class="nav-number">12.</span> <span class="nav-text">原文（部分）摘录&#x2F;翻译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#links"><span class="nav-number">13.</span> <span class="nav-text">links</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
