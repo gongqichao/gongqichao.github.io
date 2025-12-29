@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="博客, 技术, 生活">
+    <meta name="description" content="记录生活与技术">
+    <meta name="author" content="Chao">
+    
+    <title>
+        
+            Breakneck 笔记 |
+        
+        Chao&#39;s Log
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/favicon.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"gongqichao.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#2ecc71","title":"Chao's Log","author":"Chao","avatar":null,"logo":"/images/site-logo.svg","favicon":"/images/favicon.svg"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving. || 记录生活，分享技术","hitokoto":false},"social_contact":{"enable":false,"links":{"github":"https://github.com/gongqichao","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"mailto:526497440@qq.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"Something written down without AI!","category":false,"tag":true,"post_datetime":"created"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default","enable":true,"style":"default","copy_btn":true,"word_wrap":false,"highlight_height_limit":300},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right","auto_open":true,"position":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":false},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":"gongqichao/gongqichao.github.io","repo_id":"R_kgDOMBPMAQ","category":"Announcements","category_id":"DIC_kwDOMBPMAc4CzSvc","reactions_enabled":true,"mapping":"pathname","theme":"preferred_color_scheme","lang":"zh-CN"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2025,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]},"icp":{"enable":true,"number":null,"url":null}},"inject":{"enable":false,"css":[null],"js":[null]},"tags":{"tag_cloud":true,"comment":false},"math":{"enable":false,"engine":"mathjax"},"mermaid":{"enable":false},"seo":{"google_verification":null,"baidu_verification":null},"pwa":{"enable":false},"analytics":{"google":{"enable":false,"id":null},"baidu":{"enable":false,"id":null}},"post_copyright_info":{"enable":true,"author":"Chaos","link":"https://gongqichao.github.io","license":"CC BY-NC-SA 4.0","license_url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"root":"","source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/site-logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Chao&#39;s Log
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        Breakneck 笔记
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Chao</span>
+                                
+                                    <span class="author-badge">Lv1</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2025-12-29 18:25:00</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Mon Dec 29 2025 22:57:04 GMT+0800">2025-12-29 22:57:04</span>
+                </span>
+            
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/books/">books</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>《Breakneck》</p>
+<p>作者：<a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Dan_Wang" >Dan Wang<i class="fas fa-external-link-alt"></i></a></p>
+<p>我是从 <a class="link"   target="_blank" rel="noopener" href="https://danwang.co/" >annual letter<i class="fas fa-external-link-alt"></i></a> 开始关注他的，这本书里其实也有很多他之前在 annual letter 中表达过的观点，比如：中国在之前的几十年中虽然一直扮演全球供应链中低价值的生产角色，但正是在生产过程中不断积累的过程知识(process knowledge)，让中国成为了全球最大的生产国。</p>
+<p>这也是他在这本书中的核心观点：中国是一个“工程”国家（看重建设和生产），而美国是一个“律师”国家（看重过程和服务），他认为中国和美国都应该汲取对方的优点，但遗憾的是，关于如何汲取对方优点，书中并没给出太多建设性方案。</p>
+<p>从“工程师”视角看中国的很多问题，的确有一定道理，比如这篇<a class="link"   target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/SuGs2cZg1YgEU8jAtCYibw" >关于SaaS为什么在中国这片土壤就是长不起来的文章<i class="fas fa-external-link-alt"></i></a>，也是从生产导向和消费导向的角度来分析中美SaaS之间的差异，比其他什么中国企业缺乏付费能力、产品缺乏竞争力等分析都要更有说服力一些。</p>
+<p>我不认为中国会变成美国甚至欧洲那样的地方，在更长的时间内我们应该都不会声称自己是“发达”国家（即便已经达到），所以内卷、竞争甚至过度竞争的情况在中国就是常态，仍然有太多的人希望过上更好的生活（互联网持续深入打开各个阶层人的视野），而重生产、轻享受&#x2F;消费的大环境让“成为富人”或者“成为中产”在中国都必然是一个更加困难的过程。</p>
+<p>这样的社会，始终会有大量的生产类工作（偏体力&#x2F;机械&#x2F;重复劳动）机会留出来，所以只要不懒、不傻，其实在中国生活是不难的（哪怕是北上广深），但这样的工作很难让人经济自由，步入中产，而 AI 的持续迭代，会进一步压缩智力&#x2F;知识的优势，换句话说，只有在某个领域拥有资深经验、知识或技能，才能攫取到超额的回报（否则也许还不如前面说的生产类工作，因为需要跟 AI 竞争）。</p>
+<p>书中部分原文和译文：</p>
+<h2 id="Introduction-引言"><a href="#Introduction-引言" class="headerlink" title="Introduction 引言"></a>Introduction 引言</h2><p>◆ shifts and tussles<br>变动与角力</p>
+<p>◆ buffeted by a pandemic and a darkening international environment<br>遭受疫情冲击与国际环境恶化的双重影响<br><code>buffeted</code>在这里是<code>遭受冲击</code>的意思</p>
+<p>◆ If you want to appreciate what Detroit felt like at its peak, it’s probably better to experience that in Shenzhen than anywhere in the United States.<br>如果你想感受底特律鼎盛时期的风貌，那么去深圳体验或许比在美国任何地方都更贴切。</p>
+<p>◆ A paramount question of our times is whether hostility between China and the United States can stay at a manageable simmer. Because if it boils over, they will devastate not only each other but also the world.<br>当今时代的一个核心问题是，中美之间的对抗能否维持在可控的低烈度状态。因为一旦矛盾全面爆发，不仅会让两国两败俱伤，更会给整个世界带来毁灭性后果。</p>
+<p>◆ China is an engineering state, building big at breakneck speed, in contrast to the United States’ lawyerly society, blocking everything it can, good and bad.<br>中国是一个 “工程型国家”，以极快的速度推进大型项目建设；反观美国，其社会处处充斥着 “律师思维”，无论利弊，凡事都要设置重重阻碍。</p>
+<h2 id="Chapter-1-Engineers-vs-Lawyers-工程师模式-vs-律师思维"><a href="#Chapter-1-Engineers-vs-Lawyers-工程师模式-vs-律师思维" class="headerlink" title="Chapter 1: Engineers vs. Lawyers 工程师模式 vs 律师思维"></a>Chapter 1: Engineers vs. Lawyers 工程师模式 vs 律师思维</h2><p>◆ When I departed from Silicon Valley for China in 2017, it felt clear that the United States had lost something special over the past four decades. While China was building the future, America had become physically static, its innovations mostly bound up in the virtual and financial worlds.<br>2017 年，当我离开硅谷前往中国时，一个感受愈发清晰：过去四十年里，美国已然失去了某种独特的精神内核。在中国全力构筑未来之际，美国的实体领域发展陷入停滞，其创新成果大多局限于虚拟经济和金融领域。</p>
+<p>◆ The United States, by contrast, has a government of the lawyers, by the lawyers, and for the lawyers.<br>相比之下，美国的政府已然沦为一个 “由律师掌控、为律师服务、靠律师运作” 的机构。</p>
+<p>◆ Hoover and Carter are remembered for many things, especially for their dismal political instincts that produced thumping electoral defeats.<br>胡佛与卡特之所以被世人铭记，有诸多原因，尤其是他们糟糕的政治直觉，最终让自己在选举中一败涂地。</p>
+<p>◆ novel coronavirus<br>新型冠状病毒</p>
+<p>◆ a series of regulatory thunderbolts<br>一系列监管重拳</p>
+<p>◆ Well-to-do people professionals<br>富裕阶层的专业人士</p>
+<p>◆ Over the policy’s three-and-a-half-decade duration, China conducted nearly as many abortions, according to official figures, as the present population of the United States.<br>据官方数据显示，在该政策实施的三十五年间，中国的人工流产总数几乎与当前美国的总人口数相当。</p>
+<p>◆ As the state moved to dismantle socialism, it offered homes to urban workers for a song.<br>在国家逐步摒弃计划经济体制的过程中，曾以极低的价格向城市职工出售住房。</p>
+<p>◆ The first is an elevation of process over outcomes.<br>其一，是将程序正义置于结果之上。</p>
+<p>◆ The other problem of the lawyerly society is a systematic bias toward the well-off.<br>律师式社会的另一大弊病，是存在着根深蒂固的阶层偏见，处处向富裕群体倾斜。</p>
+<p>◆ Litigation offers endlessly tantalizing possibilities for settling scores.<br>诉讼为人们提供了层出不穷的报复手段，让寻仇泄愤变得触手可及。</p>
+<p>◆ The system of checks and balances has been, and is, fundamental to the success of the United States.<br>三权分立与制衡体系，过去是、现在依然是美国得以崛起并保持强盛的核心基石。</p>
+<h2 id="Chapter-2-Building-Big-宏大工程"><a href="#Chapter-2-Building-Big-宏大工程" class="headerlink" title="Chapter 2: Building Big 宏大工程"></a>Chapter 2: Building Big 宏大工程</h2><p>◆ It is raucous, full of unexpected sites, a city that teems. With its Blade Runner aesthetic, Chongqing is the embodiment of cyberpunk—or more aptly given its rivers, hydropunk.<br>The mountains that protected the city from Japanese bombers also create a heat trap, making Chongqing one of China’s “four furnaces.” Perversely, the favorite food of locals is a cauldron of red chilies, beef oil, and Sichuan peppercorns—which generates a purring tingle on the tongue—into which one dips a swirl of thinly sliced meats and vegetables. Some of the air-raid tunnels have become hotpot restaurants, popular because the tunnels’ cool air helps spicy food go down more easily. Chongqing is also making plans to turn some of these shelters into art exhibitions or wine cellars.<br>Christian, Teng, and I were in a celebratory mood when we reached the city. After four days of cycling through nature, it felt great to be thrown into Chongqing’s dramatic urban scenery. At night, the city’s skyscrapers come to life with bright lights dancing along their sides. As we watched the sun set, people gathered around low tables, the centers of which held steaming pots of crimson broth.<br>这是一座喧嚣热闹、充满惊喜的城市，处处生机勃勃。重庆的城市风貌颇具《银翼杀手》的赛博朋克质感，堪称赛博朋克的现实范本；若结合其遍布全城的河流来看，称其为 “水力朋克” 则更为贴切。曾经庇护这座城市免遭日军轰炸的群山，如今却形成了天然的热屏障，让重庆跻身中国 “四大火炉” 之列。矛盾的是，当地人最钟爱的美食，却是一锅由红辣椒、牛油和花椒熬制而成的汤底 —— 入口时舌尖会泛起一阵酥麻的快感，食客将切得薄如蝉翼的肉片与蔬菜下入锅中涮煮。一些当年的防空洞如今被改造成了火锅店，颇受欢迎，因为防空洞中的阴凉空气能缓解辣味带来的灼热感。重庆还计划将部分防空洞进一步改造为艺术展馆或酒窖。我与克里斯蒂安、滕抵达这座城市时，心情都十分愉悦。在山野间骑行四天后，一头扎进重庆这般极具视觉冲击力的都市风光里，实在令人心旷神怡。夜幕降临，摩天大楼华灯璀璨，灯光沿着楼体流转闪烁。我们看着夕阳缓缓西沉，街边的人们围坐在矮桌旁，桌上的红汤火锅热气腾腾。</p>
+<p>◆ a purring tingle on the tongue<br>舌尖泛起的酥麻震颤感</p>
+<p>◆ it is enacting a Leninist agenda in which the state retains enormous discretion to command economic resources in order to maintain political control and to build toward a post-scarcity world.<br>中国正在践行一套列宁主义式的发展纲领 —— 国家掌握着调配经济资源的绝对主导权，以此维系政治管控，并朝着物质极大丰富的后稀缺社会稳步迈进。</p>
+<p>◆ Guizhou has built forty-five of the world’s one hundred highest bridges.<br>全球一百座最高桥梁中，有四十五座都坐落于贵州。</p>
+<p>◆ Cars quickly filled these roads. In 1990, there were half a million automobiles in the country; in 2024, there were 435 million, many of them electric.<br>汽车很快便挤满了这些新建的道路。1990 年，全国汽车保有量仅为 50 万辆；到 2024 年，这一数字飙升至 4.35 亿辆，其中相当一部分是电动汽车。</p>
+<p>◆ From 2003 to 2013, Shanghai added as much subway track as in the entire system in New York City. In 2025, fifty-one Chinese cities have subway lines, eleven of which are longer than New York’s.<br>2003 至 2013 年间，上海新增的地铁里程数，与纽约地铁系统的总里程数相当。到 2025 年，中国已有 51 座城市开通地铁，其中 11 座城市的地铁线路总长超过纽约。</p>
+<p>◆ By 2025, China caught up to the United States in the number of nuclear plants: fifty-five and fifty-four, respectively.<br>截至 2025 年，中国的核电站数量已追平美国，两国分别拥有 55 座和 54 座核电站。</p>
+<p>◆ According to Vaclav Smil, the 4.4 billion tons of cement that China produced from 2018 to 2019 nearly equals the amount of cement the United States produced over the entire twentieth century.<br>据瓦茨拉夫・斯米尔统计，中国在 2018 至 2019 年间生产的水泥总量高达 44 亿吨，这一数字几乎相当于美国整个 20 世纪的水泥总产量。</p>
+<p>◆ This building boom was both a cause and an effect of China’s growing wealth. It stimulated economic activity directly: The construction of homes, highways, subways, and power plants spurred demand for materials and jobs that rippled beyond the immediate construction site. It also facilitated China’s urbanization, pulling people from farms into cities, where their productivity was much greater.<br>这场基建热潮，既是中国经济腾飞的动因，也是其带来的结果。它直接刺激了经济活力：住宅、高速公路、地铁和电厂的建设，不仅催生了对建筑材料的需求，还创造了大量就业岗位，其影响远超建筑工地本身。同时，基建热潮也推动了中国的城镇化进程，将大量农村人口吸引到城市，而城市的环境能极大地提升他们的生产效率。</p>
+<p>◆ While China compressed more than a century’s worth of American construction into a few decades, it folded in many of its problems too.<br>中国在短短数十年间，便完成了美国耗时一个多世纪才实现的基建规模，但与此同时，也将美国在发展过程中遇到的诸多问题一并浓缩在了这一过程中。</p>
+<p>◆ Today, Americans rarely feel so excited for major construction projects, in part because they’re associated with environmental damage, in part because they take so long to complete, and in part because they’re so rare that people have forgotten how much they can improve lives.<br>如今，美国人对大型基建项目早已没了当初的热情。部分原因是这类项目往往伴随着环境破坏；部分原因是项目工期过长；还有一部分原因是此类项目太过罕见，以至于人们早已忘记基建能给生活带来多大的改善。</p>
+<p>◆ The average cost to construct a high-speed line in China is about $33 million per mile, which is 40 percent cheaper than in Europe and 80 percent cheaper than California’s effort, which has seen costs balloon to $192 million per mile.<br>中国高铁的平均建设成本约为每英里 3300 万美元，这一成本比欧洲低 40%，更是仅为美国加州高铁项目的五分之一 —— 加州高铁的建设成本已飙升至每英里 1.92 亿美元。</p>
+<p>◆ Lenin used the term “commanding heights of the economy” to refer to strategic sectors like power generation and transportation. In Guizhou, the commanding heights may well be seen from its tall bridges.<br>列宁曾提出 “经济制高点” 的概念，指代发电、交通等具有战略意义的核心产业。而在贵州，站在那些高耸入云的大桥上，或许就能亲眼看见属于这里的 “经济制高点”。</p>
+<p>◆ steeped in Marxism<br>深受马克思主义思想熏陶</p>
+<p>◆ For them, production was a noble deed to advance communism, while consumption was a despicable act of capitalism.<br>在他们看来，生产是推动共产主义事业前进的崇高行为，而消费则是资本主义的卑劣行径</p>
+<p>◆ The sort of central planning that is part of Marxist-Leninist states have certain resonances with the centuries-old predispositions of China’s engineering state, especially construction and control.<br>马列主义国家推行的中央计划经济模式，与中国数百年来形成的 “工程型国家” 特质有着某种内在共鸣，尤其体现在大兴土木与集中管控这两个方面。</p>
+<p>◆ As Deng was fond of remarking, the defining feature of socialism was not economic redistribution but rather “concentrating resources to accomplish great tasks.”<br>邓小平同志曾有一句名言：社会主义的本质特征并非财富的重新分配，而是 “集中力量办大事”。</p>
+<p>◆ I sometimes think of Tianjin’s library as a metaphor for China’s economy: great hardware that looks impressive from a distance, not filled with the softer stuff that actually matters.<br>我有时会将天津图书馆比作中国经济的缩影：它拥有令人叹为观止的 “硬件设施”，远观时光鲜亮丽，却缺少那些真正至关重要的 “软实力” 支撑。</p>
+<p>◆ eventually moving holdouts by hook or by crook.<br>最终通过各种手段，迫使那些顽固的反对者就范。</p>
+<p>◆ The economic partnership between the United States and China made many groups better off.<br>中美两国的经济伙伴关系，曾让众多群体从中受益。</p>
+<p>◆ China hasn’t felt the need to wean off its dependence on exports because American consumers are always there to buy its goods.<br>中国从未觉得有必要摆脱对出口的依赖，因为美国消费者始终是其商品的稳定买家。</p>
+<p>◆ Any time the Chinese economy wobbles, Beijing’s knee-jerk response is to announce another gigantic public works package.<br>每当中国经济出现波动，中国政府的本能反应就是推出新一轮大规模基建刺激计划。</p>
+<p>◆ China spent 13.5 percent of its GDP on infrastructure investment in 2016, whereas the US average over the past three decades is closer to 3 percent each year.<br>2016 年，中国的基建投资占 GDP 比重高达 13.5%，而美国在过去三十年间，这一比例的年均值仅为 3% 左右。</p>
+<p>◆ This lack of emphasis on efficiency has been key to another Chinese success: Part of the reason that China dominates advanced manufacturing technologies is precisely because it tolerates lower profits while cultivating a large workforce.<br>这种对效率的相对忽视，反倒成了中国取得另一项成就的关键：中国之所以能在高端制造技术领域占据主导地位，部分原因正是在于它能够容忍较低的利润率，同时着力培养一支规模庞大的产业工人队伍。</p>
+<h2 id="Chapter-3-Tech-Power-科技实力"><a href="#Chapter-3-Tech-Power-科技实力" class="headerlink" title="Chapter 3: Tech Power 科技实力"></a>Chapter 3: Tech Power 科技实力</h2><p>◆ In 1980, Shenzhen was best known for its oysters. For centuries, it was populated by folks who made their living from the sea: pearl fishers, salt farmers, and oyster harvesters. Villagers set cages along the coast where shifting tidal waves brought saline water, warmed by the sun, to meet cool mountain streams, producing mollusks known throughout the region for being especially succulent. That was the past. For three decades, Shenzhen’s waters haven’t produced oysters, their habitat flushed away by industrialization.<br>1980 年的深圳，最出名的当属当地的生蚝。几个世纪以来，这里的居民都以海为生：有人捕捞珍珠，有人晒制海盐，还有人养殖生蚝。村民们在海岸沿线设置养殖笼，涨潮时，被阳光晒暖的海水与山间汇入的清凉溪流在此交融，孕育出的生蚝肉质肥美，闻名遐迩。但这一切都已成为历史。三十年来，深圳的海域再也产出不了生蚝 —— 工业化进程早已将它们的栖息环境摧毁殆尽。</p>
+<p>◆ Shenzhen was China’s greatest boomtown and, therefore, the world’s. Its population soared from three hundred thousand in 1980 to seven million in 2000 and eighteen million in 2020.<br>深圳是中国最耀眼的新兴城市，放眼全球亦是如此。其人口数量从 1980 年的 30 万，飙升至 2000 年的 700 万，到 2020 年更是达到了 1800 万。</p>
+<h2 id="Chapter-7-Learning-to-Love-Engineers"><a href="#Chapter-7-Learning-to-Love-Engineers" class="headerlink" title="Chapter 7: Learning to Love Engineers"></a>Chapter 7: Learning to Love Engineers</h2><p>◆ IN MOVING TO THE West, my parents made a wrenching personal decision based on what amounted to a guess about the future<br>我的父母当年移居西方，是在对未来一无所知的情况下，做出的一个令他们心力交瘁的艰难决定。</p>
+<p>◆ the city was a backwater when my parents left and remains lackluster today.<br>我父母离开时，这座城市还是一片穷乡僻壤，如今依旧毫无起色。</p>
+<p>◆ By the time they were in college, Deng Xiaoping had started to dismantle the planned economy.<br>他们上大学时，邓小平已经开始着手打破计划经济的桎梏。</p>
+<p>◆ The voice is best, she reminds me, if my speech starts from my tummy, while I should project the sound as if it were emerging from my forehead. (That’s a tip for all the people hosting podcasts today.)<br>她提醒我，说话时最好用腹部发力，同时让声音仿佛从额头处穿透出来，这样的发声方式最为动听。（这一点建议，送给如今所有做播客的人。）</p>
+<p>◆ Deng’s reforms really did release the pent-up entrepreneurial energy of the country.<br>邓小平推行的改革，真正释放了这个国家被压抑已久的创业活力。</p>
+<p>◆ These homes didn’t enjoy the precipitous rise in value seen in Shanghai or Shenzhen, but it would have been a tidy sum of money.<br>这些房产虽未像上海、深圳的房子那样迎来暴涨，但倘若变现，也能换来一笔可观的收入。</p>
+<p>◆ A few of their classmates caught the boom, taking advantage of China’s two great sources of wealth creation: owning property (or participating in the great wave of construction) or owning a factory (and participating in the great wave of exports).<br>他们的几位同学赶上了时代浪潮，借助中国两大财富创造引擎实现了发家致富：一是持有房产（或投身轰轰烈烈的基建热潮），二是开办工厂（或参与如火如荼的出口贸易）。</p>
+<p>◆ Chinese would recognize something in Robert Moses. He was an American urban planner who built at breakneck speed.<br>罗伯特・摩西的身上，有着能让中国人产生共鸣的特质。这位美国城市规划师，也曾以雷厉风行的速度推进各项建设。</p>
+<p>◆ New York, and the United States writ large, cannot survive indefinitely on the infrastructure built nearly a century ago.<br>无论是纽约，还是整个美国，都不可能永远依赖近一个世纪前建成的基础设施生存下去。</p>
+<p>◆ The United States has been weakened not only by a procedure-obsessed left—which has become so determined to avoid the errors of Moses that few big works are built at all—but also a thoughtlessly destructive right.<br>美国的衰落，不仅源于执迷于程序正义的左翼势力 —— 他们为了规避罗伯特・摩西式的失误，干脆叫停了几乎所有大型基建项目；同时也归咎于行事鲁莽、崇尚破坏的右翼势力。</p>
+<p>◆ Both men were idealists with sharp elbows.<br>这两个人都是信奉 “强权即公理” 的理想主义者。sharp elbows 这里指“手段强硬”</p>
+<p>◆ DOGE would be more effective if it targeted reductions in process rather than personnel.<br>如果 “精简政府机构” 的目标是削减繁琐的流程，而非裁减人员，那么这项举措将会有效得多。</p>
+<p>◆ Shed a tear for the American states: wounded by the ostentatiously destructive tendencies of the right after it has been strangled and dragged down by the left.<br>为美国的各州政府掬一把同情之泪吧：它们先是被左翼势力束缚住手脚、拖入泥潭，如今又遭到右翼势力明目张胆的破坏，早已遍体鳞伤。</p>
+<p>◆ THE ULTIMATE CONTEST BETWEEN China and the United States will not be decided by which country has the biggest factory or the highest corporate valuation. This contest will be won by the country that works best for the people living in it.<br>中美两国的终极较量，胜负并不取决于谁拥有规模最大的工厂，或是谁的企业估值最高。最终的赢家，将是那个能为其国民创造最优渥生活的国家。</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/books/">books</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2025/10/27/%E8%A5%BF%E6%96%B9%E7%8E%B0%E4%BB%A3%E6%80%9D%E6%83%B3/"
+                                   title="西方现代思想"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">西方现代思想</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;评论
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">评论插件加载失败</span>
+    <button class="reload keep-button">点击重新加载</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">正在加载评论插件</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script data-pjax
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'gongqichao/gongqichao.github.io')
+              script.setAttribute('data-repo-id', 'R_kgDOMBPMAQ')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'DIC_kwDOMBPMAc4CzSvc')
+              script.setAttribute('data-reactions-enabled', '1')
+              script.setAttribute('data-lang', 'zh-CN')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('true' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-%E5%BC%95%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">Introduction 引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-1-Engineers-vs-Lawyers-%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%A8%A1%E5%BC%8F-vs-%E5%BE%8B%E5%B8%88%E6%80%9D%E7%BB%B4"><span class="nav-number">2.</span> <span class="nav-text">Chapter 1: Engineers vs. Lawyers 工程师模式 vs 律师思维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-2-Building-Big-%E5%AE%8F%E5%A4%A7%E5%B7%A5%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">Chapter 2: Building Big 宏大工程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-3-Tech-Power-%E7%A7%91%E6%8A%80%E5%AE%9E%E5%8A%9B"><span class="nav-number">4.</span> <span class="nav-text">Chapter 3: Tech Power 科技实力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-7-Learning-to-Love-Engineers"><span class="nav-number">5.</span> <span class="nav-text">Chapter 7: Learning to Love Engineers</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Chao</a>
+        
+    </div>
+
+    
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-%E5%BC%95%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">Introduction 引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-1-Engineers-vs-Lawyers-%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%A8%A1%E5%BC%8F-vs-%E5%BE%8B%E5%B8%88%E6%80%9D%E7%BB%B4"><span class="nav-number">2.</span> <span class="nav-text">Chapter 1: Engineers vs. Lawyers 工程师模式 vs 律师思维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-2-Building-Big-%E5%AE%8F%E5%A4%A7%E5%B7%A5%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">Chapter 2: Building Big 宏大工程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-3-Tech-Power-%E7%A7%91%E6%8A%80%E5%AE%9E%E5%8A%9B"><span class="nav-number">4.</span> <span class="nav-text">Chapter 3: Tech Power 科技实力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-7-Learning-to-Love-Engineers"><span class="nav-number">5.</span> <span class="nav-text">Chapter 7: Learning to Love Engineers</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
