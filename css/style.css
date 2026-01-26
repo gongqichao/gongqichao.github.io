@@ -4851,7 +4851,7 @@ figure.highlight .shrink-line:hover::before {
 .reward-author-container .reward-btn i {
   color: var(--text-color-3);
 }
-@import url("https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Han+Sans+SC:wght@300;400;500;700&display=swap");
 :root {
   --bg-color: #f4f1e9;
   --text-color: #3b3124;
@@ -4867,7 +4867,7 @@ figure.highlight .shrink-line:hover::before {
 }
 body,
 html {
-  font-family: 'Noto Serif SC', 'Times New Roman', serif;
+  font-family: 'Source Han Sans SC', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.7;
   background-color: var(--bg-color) !important;
@@ -4914,7 +4914,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Noto Serif SC', 'Times New Roman', serif;
+  font-family: 'Source Han Sans SC', Helvetica, Arial, sans-serif;
   color: var(--text-color);
   margin-bottom: 15px;
 }
@@ -4930,7 +4930,7 @@ pre {
   color: var(--text-color);
 }
 .nav-menu {
-  font-family: 'Noto Serif SC', 'Times New Roman', serif;
+  font-family: 'Source Han Sans SC', Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 a {
@@ -4963,7 +4963,7 @@ a:hover {
 }
 .post-item-meta {
   color: #8a7f73;
-  font-family: 'Noto Serif SC', 'Times New Roman', serif;
+  font-family: 'Source Han Sans SC', Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
 .container {
