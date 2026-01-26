@@ -242,7 +242,7 @@
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Mon Jan 26 2026 13:11:57 GMT+0800">2026-01-26 13:11:57</span>
+                    <span class="datetime" data-updated="Mon Jan 26 2026 13:57:48 GMT+0800">2026-01-26 13:57:48</span>
                 </span>
             
         
@@ -291,6 +291,15 @@
 <p>清华源（optional）：<a class="link"   target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/" >https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/<i class="fas fa-external-link-alt"></i></a></p>
 </blockquote>
 </li>
+</ol>
+<ul>
+<li><p>换清华源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 1. 将清华源环境变量写入配置文件</span><br><span class="line">echo &#x27;export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export HOMEBREW_CORE_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line"></span><br><span class="line"># 2. 刷新当前 Shell 配置</span><br><span class="line">source ~/.zshrc</span><br><span class="line"></span><br><span class="line"># 3. 应用更新</span><br><span class="line">brew update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>恢复官方源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 1. 从配置文件中删除包含清华源的行</span><br><span class="line">sed -i &#x27;&#x27; &#x27;/mirrors.tuna.tsinghua.edu.cn/d&#x27; ~/.zshrc</span><br><span class="line"></span><br><span class="line"># 2. 清除当前会话的临时变量</span><br><span class="line">unset HOMEBREW_API_DOMAIN HOMEBREW_BOTTLE_DOMAIN HOMEBREW_BREW_GIT_REMOTE HOMEBREW_CORE_GIT_REMOTE</span><br><span class="line"></span><br><span class="line"># 3. 强制将 brew 核心仓库恢复为 GitHub 官方地址</span><br><span class="line">git -C &quot;$(brew --repo)&quot; remote set-url origin https://github.com/Homebrew/brew</span><br><span class="line"></span><br><span class="line"># 4. 应用更新</span><br><span class="line">brew update</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="4">
 <li><p>Git(brew)</p>
 </li>
 <li><p>nvm(Node Version Manager)</p>
