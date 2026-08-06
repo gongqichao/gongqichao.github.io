@@ -9,7 +9,7 @@
     
     <title>
         
-            Mac鼠标侧键问题 |
+            Mac App 清单 |
         
         Chaos Log
     </title>
@@ -213,7 +213,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Mac鼠标侧键问题
+                        Mac App 清单
                     </div>
                 
 
@@ -237,13 +237,13 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2026-07-16 11:51:09</span>
+                <span class="datetime">2026-01-21 00:00:00</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Thu Jul 16 2026 12:15:43 GMT+0800">2026-07-16 12:15:43</span>
+                    <span class="datetime" data-updated="Thu Aug 06 2026 07:10:45 GMT+0000">2026-08-06 15:10:45</span>
                 </span>
             
         
@@ -264,12 +264,12 @@
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>399 字</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>442 字</span>
             </span>
         
         
             <span class="meta-info-item post-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>2 分钟</span>
             </span>
         
         
@@ -291,15 +291,134 @@
                     
 
                     
-                         <p>Chrome 各种 AI 插件简直泛滥成灾，所以打算用 Safari 作为默认浏览器了（又试了一次 Firefox，还是太慢，没法用）</p>
-<p>目前 Safari 别的问题还能勉强接受，但“后退”和“前进”无法使用鼠标侧键（M4 和 M5），只能用默认的”花键+]”和”花键+[“</p>
-<p>当然，还有 Mac 的手势体系可以支持，但我比较讨厌 Mac 手势那套东西</p>
-<p>所以分别问 Workbuddy(Hy3)，Opencode(qwen3.7-max) 和 Grok4（Twitter 侧栏） 要了解决方案，前两个都是言之凿凿让安装罗技自家的 Options+或 G Hub 这种App 就能解决，但我的 G102 并不能</p>
-<p>Grok4 给出了三个解决方案，第一个也是罗技 G Hub，不过第二个是 <a class="link"   target="_blank" rel="noopener" href="https://github.com/archagon/sensible-side-buttons" >SensibleSideButtons<i class="fas fa-external-link-alt"></i></a>，这个repo 打开一看就很有戏，作者给出了详细的问题描述（带截图）、尴尬的过渡解决方案、终极解决方案的灵感来源以及技术原理解释</p>
-<p>不过下载安装打开后，提示我需要安装 Rosetta 2 才能运行，看了一眼作者的 Github Repo，果然是 9 年前的产品了，无法适配我现在 Apple M4芯片的 Macbook 了</p>
-<p>很显然，不想装 Rosetta 2，这种好东西肯定有人会继续维护的，果然继续追问 Grok4，翻到了 <a class="link"   target="_blank" rel="noopener" href="https://github.com/thealpa/SaneSideButtons" >SaneSideButtons<i class="fas fa-external-link-alt"></i></a>，这个项目就是前面那个项目的后续维护升级版本，完美支持 Apple 芯片</p>
-<p>Voilà!</p>
-<p>PS，Grok4 之所以能给出更好的结果，估计还是 Agent 能力而不是 model 能力，所以国产 Agent 和 model 还要加油</p>
+                         <ol>
+<li><p>科学上网</p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh" >Zsh&#x2F;Ohmyzsh<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>Mac应该从10.15版本开始就自带zsh，并且将其作为默认shell了</p>
+</blockquote>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://brew.sh/?spm=a2c6h.13651104.d-4025.2.4fd44767hZRZTB" >HomeBrew<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>清华源（optional）：<a class="link"   target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/" >https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li><p>换清华源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 1. 将清华源环境变量写入配置文件</span><br><span class="line">echo &#x27;export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export HOMEBREW_CORE_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git&quot;&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line"></span><br><span class="line"># 2. 刷新当前 Shell 配置</span><br><span class="line">source ~/.zshrc</span><br><span class="line"></span><br><span class="line"># 3. 应用更新</span><br><span class="line">brew update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>恢复官方源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 1. 从配置文件中删除包含清华源的行</span><br><span class="line">sed -i &#x27;&#x27; &#x27;/mirrors.tuna.tsinghua.edu.cn/d&#x27; ~/.zshrc</span><br><span class="line"></span><br><span class="line"># 2. 清除当前会话的临时变量</span><br><span class="line">unset HOMEBREW_API_DOMAIN HOMEBREW_BOTTLE_DOMAIN HOMEBREW_BREW_GIT_REMOTE HOMEBREW_CORE_GIT_REMOTE</span><br><span class="line"></span><br><span class="line"># 3. 强制将 brew 核心仓库恢复为 GitHub 官方地址</span><br><span class="line">git -C &quot;$(brew --repo)&quot; remote set-url origin https://github.com/Homebrew/brew</span><br><span class="line"></span><br><span class="line"># 4. 应用更新</span><br><span class="line">brew update</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="4">
+<li><p>Git(brew)</p>
+</li>
+<li><p>nvm(Node Version Manager)</p>
+<blockquote>
+<p><code>curl -o- https://gitee.com/mirrors/nvm/raw/master/install.sh | bash</code></p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p>Nodejs 镜像, 编辑 ~&#x2F;.zshrc <code>export NVM_NODEJS_ORG_MIRROR=&quot;https://npmmirror.com/mirrors/node&quot;</code></p>
+</blockquote>
+<ol start="6">
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://servercat.app/" >ServerCat<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>手机上可以看服务器状态</p>
+</blockquote>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://tabby.sh/" >Tabby<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>好用的 ssh 客户端</p>
+</blockquote>
+</li>
+<li><p>Amphetamine(app store)</p>
+</li>
+<li><p><del>Dozer(已停止维护)</del> <a class="link"   target="_blank" rel="noopener" href="https://superbits.co/hidden/" >Hidden Bar<i class="fas fa-external-link-alt"></i></a>，或者直接 app store 搜 Hidden bar 并安装</p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://lemon.qq.com/" >柠檬清理<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.mowglii.com/itsycal/" >Itsycal<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>欧路词典(app store)</p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://dropoverapp.com/" >Dropover<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>并不是很常用</p>
+</blockquote>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://mounty.app/" >Mounty<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>加载移动硬盘</p>
+</blockquote>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.raycast.com/" >Raycast<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.wps.cn/" >WPS Office<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.jetbrains.com/datagrip/" >DataGrip<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>默认快捷键很舒服，UI也很舒服</p>
+</blockquote>
+</li>
+</ol>
+<p>18.<a class="link"   target="_blank" rel="noopener" href="https://obsidian.md/" >Obsidian<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>配套的 Obsidian Web Clipper 也好用</p>
+</blockquote>
+<ol start="19">
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://iina.io/" >IINA<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>best media player</p>
+</blockquote>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.postman.com/downloads/" >Postman<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.cherry-ai.com/" >cherry studio<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://localsend.org/zh-CN" >localsend<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>比 airdrop 好用</p>
+</blockquote>
+</li>
+<li><p>iShot(app store)</p>
+</li>
+<li><p>Rectangle（窗口管理）</p>
+<blockquote>
+<p><code>brew install --cask rectangle</code></p>
+</blockquote>
+</li>
+<li><p>CC Switch</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap farion1231/ccswitch</span><br><span class="line">brew install --cask cc-switch</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Unsplash Wallpapers(app store)</p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.xunlei.com/" >Thunder<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>The Unarchiver(app store)</p>
+</li>
+<li><p>MonitorControl</p>
+<blockquote>
+<p><code>brew install --cask monitorcontrol</code></p>
+</blockquote>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://meeting.tencent.com/" >腾讯会议<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://cursor.com/cn" >Cursor<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>Claude Code(brew)</p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://www.doubao.com/about" >豆包<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link"   target="_blank" rel="noopener" href="https://zed.dev/" >Zed<i class="fas fa-external-link-alt"></i></a></p>
+<blockquote>
+<p>打开速度最快的editor</p>
+</blockquote>
+</li>
+</ol>
 
                     
                 </div>
@@ -328,15 +447,31 @@
                 
                     <div class="post-nav border-box">
                         
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2026/06/21/%E6%98%9F%E6%B5%B7%E6%9D%AF/"
+                                   title="星海杯"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">星海杯</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
                         
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2026/07/05/%E4%BB%8A%E6%97%A5%E7%9C%8B%E6%88%BF/"
-                                   title="今日看房"
+                                   href="/2025/12/29/Breakneck/"
+                                   title="Breakneck 笔记"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">今日看房</span>
+                                        <span class="post-nav-title-item text-ellipsis">Breakneck 笔记</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
